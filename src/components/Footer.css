@@ -1,0 +1,32 @@
+.footer {
+  background: linear-gradient(135deg, #401d57, #89459d, #622c64);
+  color: white;
+}
+
+.footer-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-description {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.footer-links a {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffd700;
+}
+
+.footer-copy {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 10px;
+}

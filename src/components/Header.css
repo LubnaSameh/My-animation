@@ -1,0 +1,101 @@
+.header-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    background: linear-gradient(135deg, #401d57, #89459d, #622c64);
+    background-size: 300% 300%;
+    animation: gradientBackground 8s ease infinite;
+  }
+  
+  /* Gradient Animation */
+  @keyframes gradientBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .header-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 0;
+  }
+    
+  
+  
+  /* Floating Circles */
+/* Floating Circles */
+.floating-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transition: transform 0.1s ease-out; /* Smooth movement */
+  }
+  
+  .circle1 {
+    width: 80px;
+    height: 80px;
+    top: 10%;
+    left: 20%;
+  }
+  
+  .circle2 {
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 80%;
+  }
+  
+  .circle3 {
+    width: 60px;
+    height: 60px;
+    top: 70%;
+    left: 10%;
+  }
+  
+  
+  @keyframes floatAnimation {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  /* Ensure Content is Above Background */
+  .header-title,
+  .header-subtitle,
+  .header-button {
+    position: relative;
+    z-index: 1;
+  }
+   .header-button{
+   
+border-radius: 50px;
+border: none;
+  }
+  .header-button:hover{
+
+   background-color: #c0a50e;
+   color: white;
+  }
