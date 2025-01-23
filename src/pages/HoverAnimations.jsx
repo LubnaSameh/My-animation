@@ -45,13 +45,13 @@ const HoverAnimations = () => {
         <p className="page-description">
           Explore a variety of hover animations to enhance user interaction.
         </p>
-        <div className="hover-container container pt-5 pt-md-3">
+        <div className="hover-container container pt-3">
           {animations.map((item, index) => (
             <motion.div
               key={index}
               className="hover-box"
-              whileHover={item.animation} // تأثير Hover للحواسيب
-              whileTap={item.animation} // تأثير عند اللمس للهواتف
+              whileHover={item.animation} // يعمل على الحواسيب
+              whileTap={item.animation} // يعمل على الهواتف
               transition={{ duration: 0.4 }}
             >
               {item.title}
