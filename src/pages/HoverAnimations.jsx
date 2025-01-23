@@ -40,17 +40,18 @@ const HoverAnimations = () => {
   return (
     <>
       <Navbar />
-      <div className="hover-page  py-5 mt-5 px-2 pt-md-5 ">
+      <div className="hover-page py-5 mt-5 px-2 pt-md-5">
         <h1 className="page-title">Hover Animations</h1>
         <p className="page-description">
           Explore a variety of hover animations to enhance user interaction.
         </p>
-        <div className="hover-container container pt-3">
+        <div className="hover-container container pt-5 pt-md-3">
           {animations.map((item, index) => (
             <motion.div
               key={index}
               className="hover-box"
-              whileHover={item.animation}
+              whileHover={item.animation} // تأثير Hover للحواسيب
+              whileTap={item.animation} // تأثير عند اللمس للهواتف
               transition={{ duration: 0.4 }}
             >
               {item.title}
@@ -58,7 +59,7 @@ const HoverAnimations = () => {
           ))}
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };
